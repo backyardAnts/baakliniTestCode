@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    padding-left:5%; padding-right: 5%; padding-top: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper{
+    width:100%;
+    height:100%;
+}
+.content{
+    max-width:1200px;margin:0 auto;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 100vw;
+}
+.logo{
+    width:50%;
+}
+.fa-bag-shopping {
+    font-size: 2vw;
+}
+.mainHome{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navBar{
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}
+.navElement{
+    font-size: 40px;
+    margin-top: 40%;
+    font-size: 3vw;
+    font-family: "Comic Neue", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navElementA a{
+    text-decoration: none;
+    color:black;
+}
+.navElement a{
+    text-decoration: none;
+    color:black;
+    
+}
+.homePainting{
+    width: 40%;
+}
+.socialBar{
+    list-style-type: none;
+    text-align: center;
+    width: 20%;
+    margin: 0;
+    padding: 0;
+}
+.socialElement{
+    display: inline;
+    margin-left: 5%; margin-right: 5%;
+    font-size: 2vw;
+}
+.socialElement a{
+    color:black;
+}
+.reservedRights{
+    font-size:1.5vw;
+}
+.mainContact{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+.artistMain{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.submitBtn{
+    background-color: black;
+    color:white;
+    font-size: 20px;
+    border-radius: 10px;
+    padding-top:5px; padding-bottom: 5px;
+    
+}
+.product-display img{
+    width:400px; height:350px;
+}
+.product-display{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 10px;;
+}
+.mainGallery{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.category-menu{
+    margin-top: 2%;
+    text-align: center;
+    width: 100%;
+}
+.category-item{
+    display:inline;
+    border-style: solid;
+    border-width: 1px;
+    transition: 0.4s;
+    padding: 1%;
+}
+.category-item a{
+    color:black;
+    text-decoration: none;
+    width:100%;
+    padding-left: 20px; padding-right: 20px;
+}
+.imageDesc{
+    margin-top: 5%; width:20%;
+    display: block;
+    margin-left:auto; margin-right: auto;
+}
+.category-item:hover{
+    background-color: black;
+}
+.category-item a:hover{
+    color:white;
+}
+.descriptionPara{
+    width:50%;
+    margin-top: 5%;
+    text-align: justify;
+    font-size: 1.3vw;
+    display: block;
+    margin-left: auto; margin-right: auto;
+}
+.fullForm{
+    width:50%;
+}
+.formForInput{
+    display: flex;
+    flex-direction: column;
+}
+.fullForm h2{
+    font-size: 3vw;
+    margin-bottom: 3%;
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+.mainGallery h2{
+    font-size: 3vw;
+    margin-bottom: 3%;
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+.contactImgae{
+    width:40%;
+}
+.formForInput label{
+    margin-top: 7%; margin-bottom: 4%;
+    font-size: 1.5vw;
+}
+.formForInput input{
+    border-top-style: none;border-left-style: none;border-right-style: none;
+}
+.formForInput textarea{
+    border-top-style: none;border-left-style: none;border-right-style: none;
+}
+.formForInput button{
+    width: 30%;
+    margin-top: 5%;
+    font-size: 1.5vw;
+}
+footer{
+    margin-top: 7%;
+    display:flex;
+    justify-content: space-between;
+}
+@media (max-width: 480px) {
+    .mainHome{
+        display: block;
+        align-items: center;
+    }
+    .mainHome img{
+        display: block;
+        margin-left: auto; margin-right: auto;
+    }
+    .navElement{
+        margin-top:5%; margin-bottom: 5%;
+    }
+    .artistMain{
+        display: block;
+    }
+    .imageDesc{
+        display: block;
+        margin-left:auto; margin-right: auto;
+    }
+    .descriptionPara{
+        display:block;
+        text-align: center;
+        font-size: 3vw;
+    }
+    .mainContact{
+        display: block;
+        margin-top: 5%; margin-left: auto; margin-right: auto;
+    }
+    .contactImgae{
+        display: block;
+        margin-left: auto; margin-right: auto; margin-bottom:10%;
+    }
+    .fullForm{
+        width:70%;
+        display: block;
+        margin-left: auto; margin-right: auto;
+    }
+    .fullForm h2{
+        font-size: 4vw;
+        margin-bottom: 3%;
+    }
+    .contactImgae{
+        width:40%;
+    }
+    .formForInput label{
+        margin-top: 7%; margin-bottom: 4%;
+        font-size: 3vw;
+    }
+    .formForInput button{
+        font-size: 2vw;
+    }
+    .reservedRights{
+        font-size:2.5vw;
+    }
+    footer{
+        margin-top:20%;
+    }
+    .socialElement{
+        display: inline;
+        margin-left: 5%; margin-right: 5%;
+        font-size: 3vw;
+    }
+    .fa-bag-shopping {
+        font-size: 3vw;
+    }
+    .mainGallery .navBar{
+        display: none;
+    }
+    .product-display img{
+        width:200px; height:150px;
+    }
+    .content {
+		margin: auto;
+		max-width: auto;
+	}
+}
+@media (min-width: 1025px) and (max-width: 1200px) { 
+    .product-display img{
+        width:350px; height:300px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .product-display img{
+        width:270px; height:250px;
+    }
+    .content {
+		margin: auto;
+		max-width: auto;
+	}
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    .mainGallery .navBar{
+        display: none;
+    }
+    .product-display img{
+        width:200px; height:150px;
+    }
+    .content {
+		margin: auto;
+		max-width: auto;
+	}
+
+}
